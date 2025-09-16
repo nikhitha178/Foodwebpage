@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+.left,
+.center,
+.right {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left,
+.right {
+    flex: 1;
+    min-width: 250px;
+}
+
+.center {
+    flex: 2;
+    min-width: 300px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.left p,
+.right p {
+    font-weight: bold;
+}
+
+.methods div {
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.methods div:hover {
+    background-color: #f4f4f4;
+}
+
+.methods i {
+    margin-right: 10px;
+}
+
+.card-details {
+    margin-top: 20px;
+}
+
+.card-details p {
+    margin: 10px 0 5px;
+}
+
+.card-details input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.card-details button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-details button:hover {
+    background-color: darkgreen;
+}
+
+.c-number,
+.cvv-box {
+    display: flex;
+    align-items: center;
+}
+
+.c-number i,
+.cvv-box i {
+    margin-left: 10px;
+}
+
+.c-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.c-details>div {
+    width: 48%;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .center {
+        border-left: none;
+        border-right: none;
+        order: 2;
+    }
+
+    .left,
+    .right {
+        order: 1;
+    }
+}

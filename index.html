@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>QuickServe </title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- font awesome cdn link -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link -->
+
+  <link rel="stylesheet" href="stylee.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <!--header section starts -->
+  <header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>QuickServe.</a>
+
+    <nav class="navbar">
+
+      <a class="active" href="#home">home</a>
+
+      <a href="#dishes">dishes</a>
+
+      <a href="#about">about</a>
+
+      <a href="#menu">menu</a>
+
+      <a href="#review">review</a>
+
+      <a href="#order">order</a>
+
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+
+      <i class="fas fa-search" id="search-icon"></i>
+
+      <a href="#" class="fas fa-heart"></a>
+
+
+
+
+
+    </div>
+
+
+
+
+
+  </header>
+  <!--header section ends -->
+
+  <!--search form -->
+  <form action="" id="search-form">
+
+    <input type="search" placeholder="search here.." name=" " id="search-box">
+
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+
+  </form>
+
+  <!--home section start -->
+  <section class="home" id="home">
+    <div class="swiper-container home-slider">
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>our special dish</span>
+            <h3>Spicy Noodles</h3>
+            <p>Kick up your taste buds with our fiery, flavor-packed spicy noodles!</p>
+            <a href="#order" class="btn">order now</a>
+          </div>
+          <div class="image">
+            <img src="images/spicynoddles.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>our special dish</span>
+            <h3>Veg Loaded</h3>
+            <p>Unlock happiness with every cheesy, savory bite of our signature pizzas, crafted just for you!</p>
+            <a href="#order" class="btn">order now</a>
+          </div>
+          <div class="image">
+            <img src="images/pizza.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>our special dish</span>
+            <h3>Chocoholic</h3>
+            <p>Savor the silky richness of our heavenly chocolate mousse, a dessert worth every moment.</p>
+            <a href="#order" class="btn">order now</a>
+          </div>
+          <div class="image">
+            <img src="images/ice-cream.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!--home section end -->
+
+  <!--dishes section start -->
+  <section class="dishes" id="dishes">
+    <h3 class="sub-heading"> our dishes </h3>
+    <h1 class="heading"> popular dishes </h1>
+    <div class="box-container">
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/waffle.png" alt=" ">
+        <h3>Chocalate Waffles</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span></span>
+        <a href="#" class="btn" onclick="addToCard($,{key})">Rs.189</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/nachobowl.png" alt=" ">
+        <h3>Nacho Bowl</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span></span>
+        <a href="#" class="btn">Rs.399</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/pizza.png" alt=" ">
+        <h3>Veg Loaded Pizza</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span></span>
+        <a href="#" class="btn">Rs.259</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/FriedChicken.png" alt=" ">
+        <h3>Fried Chicken</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span></span>
+        <a href="#" class="btn">Rs.289</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/friedrice.png" alt=" ">
+        <h3>Shrimp Fried Rice</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span></span>
+        <a href="#" class="btn">Rs.339</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="images/burger.jpg" alt=" ">
+        <h3>Chicken Burger</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span></span>
+        <a href="#" class="btn">Rs.229</a>
+      </div>
+    </div>
+  </section>
+  <!--dishes section end -->
+
+  <!-- about section starts-->
+
+  <section class="about" id="about">
+
+    <h3 class="sub-heading"> about us </h3>
+
+    <h1 class="heading"> why choose us? </h1>
+
+    <div class="row">
+
+      <div class="image">
+
+        <img src="images/about.jpg" alt="">
+
+      </div>
+      <div class="content">
+
+        <h3>best food in the country</h3>
+
+        <p>Discover a culinary journey where passion meets flavor.From local favorites to gourmet cuisine, we deliver
+          culinary delights straight to your door.
+          Whether it's a cozy night in or a special occasion, enjoy effortless ordering and exceptional food, all with a
+          tap.</p>
+
+
+        <div class="icons-container">
+
+          <div class="icons">
+
+            <i class="fas fa-shipping-fast"></i>
+
+            <span>free delivery</span>
+
+          </div>
+
+          <div class="icons">
+
+            <i class="fas fa-rupee-sign"></i>
+
+            <span>easy payments</span>
+
+          </div>
+
+          <div class="icons">
+
+            <i class="fas fa-headset"></i>
+
+            <span>24/7 service</span>
+          </div>
+          <a href="#" class="btn">learn more</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- about section ends-->
+
+  <!-- menu section starts-->
+
+  <section class="menu" id="menu">
+
+    <h3 class="sub-heading"> our menu </h3>
+
+    <h1 class="heading"> today's speciality </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/taco.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Chicken Tacos</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs. 209</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/sandwich.png" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>sandwich</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.189</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/rolls.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Crispy Spring Rolls</h3>
+
+          <p>A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.219</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/mpizza.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Margherita Pizza</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.249</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/rice.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Chicken Rice Bowl</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.319</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/salad.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Caesar Salad</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.199</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/waffle.png" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Choco Chip Waffles</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.179</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/ice-cream.png" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Chocolate Mousse</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.149</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/pancake.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Chocolate Pancakes</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.229</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/lemonade.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Fresh Lemonade</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.119</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/smoothie.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Mango Smoothie</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.129</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+      <div class="box">
+
+        <div class="image">
+
+          <img src="images/iced.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+
+          <div class="stars">
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-star-half-alt"></i>
+
+          </div>
+
+          <h3>Iced Coffee</h3>
+
+          <p> A delicious selection of hearty breakfasts, tasty sandwiches, fresh salads, and indulgent desserts, all
+            made with the freshest ingredients.</p>
+
+          <a href="#" class="btn">Rs.169</a>
+
+          <span class="pice"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- menu section end-->
+
+  <!-- review section starts-->
+
+  <section class="review" id="review">
+
+    <h3 class="sub-heading"> customer's review </h3>
+
+    <h1 class="heading"> what they say </h1>
+
+    <div class="review-slider">
+
+      <div class="wrapper">
+
+        <div class="slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+
+            <img src="images/profile-1.jpg" alt="">
+
+            <div class="user-info">
+
+              <h3>Ayaan Patel</h3>
+              <div class="stars">
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star-half-alt"></i>
+
+              </div>
+            </div>
+
+          </div>
+          <p>The menu offers a wide variety of options, and everything we tried was delicious. I especially loved the
+            creative twists on classic dishes.</p>
+        </div>
+
+        <div class="slide">
+
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+
+            <img src="images/profile-1.jpg" alt="">
+
+            <div class="user-info">
+
+              <h3>Riya Reddy</h3>
+              <div class="stars">
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+              </div>
+            </div>
+
+          </div>
+          <p>The food always arrives fresh and hot, and the quality is consistently excellent. </p>
+        </div>
+
+        <div class=" slide">
+
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+
+            <img src="images/profile-1.jpg" alt="">
+
+            <div class="user-info">
+
+              <h3>Arjun Sharma</h3>
+              <div class="stars">
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star-half-alt"></i>
+
+              </div>
+            </div>
+
+          </div>
+          <p>The website is easy to navigate, making the ordering process a breeze. </p>
+        </div>
+
+        <div class=" slide">
+
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+
+            <img src="images/profile-1.jpg" alt="">
+
+            <div class="user-info">
+
+              <h3>Maya Varma</h3>
+              <div class="stars">
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+                <i class="fas fa-star"></i>
+
+
+
+              </div>
+            </div>
+
+          </div>
+          <p>Whether I'm craving a hearty breakfast or a tasty lunch, their menu has something for everyone. </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- review section end-->
+
+
+
+  <!-- order section start-->
+  <section class="order" id="order">
+    <h3 class="sub-heading"> order now </h3>
+    <h1 class="heading"> free and fast </h1>
+    <form action="">
+      <div class="inputBox">
+        <div class="input">
+          <span>your name</span>
+          <input type="text" placeholder="enter your name">
+        </div>
+        <div class="input">
+          <span>your number</span>
+          <input type="number" placeholder="enter your number">
+        </div>
+      </div>
+
+      <div class="inputBox">
+        <div class="input">
+          <span>your order</span>
+
+          <select id="Order">
+            <option value="0">Select your food</option>
+            <option value="209">Chicken Tacos</option>
+            <option value="189">Sandwich</option>
+            <option value="219">Crispy Spring Rolls</option>
+            <option value="249">Margherita Pizza</option>
+            <option value="319">Chicken Rice Bowl</option>
+            <option value="199">Caesar Salad</option>
+            <option value="149">Chocolate Mousse</option>
+            <option value="179">Choco Chip Waffles</option>
+            <option value="229">Chocolate Pancakes</option>
+            <option value="119">Fresh Lemonade</option>
+            <option value="129">Mango Smoothie</option>
+            <option value="169">Iced Coffee</option>
+
+
+          </select>
+        </div>
+        <div class="input">
+          <span>additional food</span>
+          <select input type="test" placeholder="additional items" id="AddlOrder">
+            <option value="0">Select your food</option>
+            <option value="209">Chicken Tacos</option>
+            <option value="189">Sandwich</option>
+            <option value="219">Crispy Spring Rolls</option>
+            <option value="249">Margherita Pizza</option>
+            <option value="319">Chicken Rice Bowl</option>
+            <option value="199">Caesar Salad</option>
+            <option value="149">Chocolate Mousse</option>
+            <option value="179">Choco Chip Waffles</option>
+            <option value="229">Chocolate Pancakes</option>
+            <option value="119">Fresh Lemonade</option>
+            <option value="129">Mango Smoothie</option>
+            <option value="169">Iced Coffee</option>
+          </select>
+        </div>
+      </div>
+      </div>
+      <div class="inputBox">
+        <div class="input">
+          <span>quantity</span>
+          <input type="number" placeholder="enter your required quantity" id="quantity1">
+        </div>
+        <div class="input">
+          <span>quantity</span>
+          <input type="number" placeholder="enter your required quantity" id="quantity2">
+        </div>
+
+      </div>
+      <div class="inputBox">
+        <div class="input">
+          <span>date and time</span>
+          <input type="datetime-local">
+        </div>
+        <div class="input">
+          <span>Cart Value</span>
+          <input type="text" placeholder="0" id="cartValue">
+        </div>
+      </div>
+
+
+
+      <div class="inputBox">
+        <div class="input">
+          <span>address</span>
+          <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="input">
+          <span>message</span>
+          <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+
+
+      <a class="btn" href="card.html">order now</a>
+    </form>
+
+  </section>
+
+  <!-- order section end-->
+
+  <!-- footer section start-->
+
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+
+        <h3>locations</h3>
+
+        <a href="#">india</a>
+
+        <a href="#">japan</a>
+
+        <a href="#">russia</a>
+
+        <a href="#">USA</a>
+
+        <a href="#">france</a>
+
+      </div>
+
+
+      <div class="box">
+
+        <h3>Quick Links</h3>
+
+        <a href="#home">home</a>
+
+        <a href="#dishes">dishes</a>
+
+        <a href="#about">about</a>
+
+        <a href="#menu">menu</a>
+        <a href="#review">Reviews</a>
+        <a href="#order">order</a>
+      </div>
+
+
+      <div class="box">
+
+        <h3>Contact info</h3>
+
+        <a href="#">+91-1234567890</a>
+
+        <a href="#">+91-0987654321</a>
+
+        <a href="#">22r21a12h9@mlrit.ac.in</a>
+
+        <a href="#">QuickServe@gmail.com</a>
+
+        <a href="#">Hyderabad,India</a>
+      </div>
+      <div class="box">
+
+        <h3>Follow Us</h3>
+
+        <a href="#">Facebook</a>
+
+        <a href="#">Instagram</a>
+
+        <a href="#">Twitter</a>
+
+        <a href="#">Linkedin</a>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- footer section end-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- custom js file link -->
+  <script src="script.js">
+
+  </script>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      "composerPlaceholder": "Queries???",
+      "botConversationDescription": "Ask any queries",
+      "botId": "3e2fca52-0569-4db7-a6d1-5e00cbc09744",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "3e2fca52-0569-4db7-a6d1-5e00cbc09744",
+      "webhookId": "6a96ace6-0205-4546-8f4a-4281c6c68c75",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "ASSISTANT",
+      "avatarUrl": "https://ouch-cdn2.icons8.com/4V5SOlEtebzC-Ezlf3eqQt4n960VUs_DzLHhJ7sknLo/rs:fit:368:372/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzkz/LzFjYTE1NDE3LTYz/ZDAtNDMyOC1hZTFl/LTY2OTg2M2EzNGE3/ZS5zdmc.png",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/ba6fb6c7-d675-4ad5-a096-6492809ee022/v3493/style.css",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "enableConversationDeletion": true,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      "allowedOrigins": []
+    });
+  </script>
+
+</body>
+
+</html>
